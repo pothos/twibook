@@ -1,0 +1,38 @@
+#!/usr/bin/ipython3
+
+n = ! pdfinfo SmallTwiBook.pdf |grep Pages
+nrpages = int(n[0].split(' ')[-1])
+
+i = list(range(1, nrpages + 1))
+l1 = []
+l2 = []
+
+for j in range(0,nrpages//4):
+  g = i.pop(0)
+  l1.append(str(g))
+  g = i.pop()
+  l1.append(str(g))
+  #
+  g = i.pop(0)
+  l2.append(str(g))
+  g = i.pop()
+  l2.append(str(g))
+
+cover = ",".join(reversed(l1))
+print("cover:", cover)
+innen = ",".join(l2)
+print("innen", innen)
+
+# cover: 18,15,20,13,22,11,24,9,26,7,28,5,30,3,32,1
+# innen 2,31,4,29,6,27,8,25,10,23,12,21,14,19,16,17
+
+listpages = "1,3,2," + ",".join(map(str,range(5,nrpages+1))) + ",4"
+# tausche bibelzitat mit contents, bewege leere seite an ende
+! pdfjoin -o SmallTwiBook-aligned.pdf SmallTwiBook.pdf $listpages
+
+! pdfjam --paper a4paper --nup '2x1' --landscape --outfile covertmp.pdf SmallTwiBook-aligned.pdf $cover
+! pdf90 --outfile SmallTwiBook-coverbatch.pdf covertmp.pdf
+! rm covertmp.pdf
+! pdfjam --paper a4paper --nup '2x1' --landscape --outfile innentmp.pdf SmallTwiBook-aligned.pdf $innen
+! pdf90 --outfile SmallTwiBook-innenbatch.pdf innentmp.pdf
+! rm innentmp.pdf

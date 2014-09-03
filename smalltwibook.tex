@@ -1,0 +1,802 @@
+\documentclass[%
+ fontsize=11pt,%           Schriftgröße
+ a5paper,pagesize,
+ paper=a5,%           Papier
+ DIV=9,%           Seitengröße (siehe Koma Skript Dokumentation !)
+ %BCOR=5mm,%        Zusätzlicher Rand auf der Innenseite
+ %pagenumber=footcenter,%
+ parskip=half*,%
+ %normalheadings,
+ twoside=true,
+ pointlessnumbers
+ %english%                      Sprache
+]{scrbook}%     Klassen: scrartcl, scrreprt, scrbook, scrletter
+\KOMAoptions{DIV=last}
+
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+\setmainfont[Mapping=tex-text]{DejaVu Serif}
+\setsansfont[Mapping=tex-text]{DejaVu Sans}
+\setmonofont[Mapping=tex-text]{DejaVu Sans Mono}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+%%\selectlanguage{ngerman}
+%%\usepackage[ngerman,frenchb]{babel}
+%%\usepackage[babel]{csquotes}
+\usepackage[autostyle,german=guillemets]{csquotes}
+%%\usepackage{marvosym}
+\usepackage{textcomp}
+\usepackage{paralist}
+\usepackage{blindtext}
+\usepackage{verbatim} % for comments
+%\usepackage{listings} % for comments
+\usepackage{multicol}
+\linespread{1.05}
+\title{Small Communication Book for Common Twi}
+\author{Kai Lüke} 
+\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+		\centering{
+			{\fontsize{30}{38}\selectfont 
+			Small \\
+			Communication Book \\
+			for \\
+			Common Twi \\
+			~~~~~~~~~~~
+			}
+		}\\
+
+		\vspace{10mm}
+		\centering{\Large{Ghana-Korea-Germany \\
+		           Church Partnership Youth Encounter}}\\
+		\vspace{\fill}
+		\centering \large{2014}
+\end{titlepage}
+
+\newpage{}
+\thispagestyle {empty}
+
+\vspace*{2cm}
+
+\begin{center}
+	\Large{\parbox{10cm}{
+		\begin{raggedright}
+		{\Large 
+			\textit{
+			Brothers and sisters, what should we say then?
+			When you come together, every one of you brings something.
+			You bring a hymn or a teaching or a word from God.
+			You bring a message in another language or explain what was said.
+			All of those things must be done to make the church strong.
+			% NIRV 1st Corinthians 14:26
+			%When this sound was heard, the multitude came together,
+			%and were bewildered, because everyone heard them speaking in his own language.
+			% WEB Acts 2:6
+			%And the multitude of them that believed were of one heart and of one soul:
+			%neither said any of them that ought of the things which he possessed was his own;
+			%but they had all things common.
+			% WEB 4:32
+			}
+		}
+
+		\vspace{.5cm}\hfill{--- NIRV 1 Corinthians 14:26}
+		\end{raggedright}
+	}
+}
+\end{center}
+
+\rmfamily{\tableofcontents}
+\thispagestyle {empty}
+\mainmatter
+
+\chapter{Pronunciation Help}
+\small{
+\begin{center}
+    \begin{tabular}{cc}
+       a & most times like b\textbf{a}rk \\
+       e & short like in l\textbf{e}t or longer \\
+       ɛ & h\textbf{ea}d \\
+       i & short like in s\textbf{i}t or long like sh\textbf{ee}t \\
+       o & most times like f\textbf{o}r\\
+       ɔ & open O like in p\textbf{o}t \\
+       u & like l\textbf{oo}k or ch\textbf{oo}se \\
+       g & \textbf{g}ate \\
+       h & \textbf{h}ire \\
+       s & \textbf{s}uit \\
+       r & rolling tongue R \\
+       w & \textbf{w}ood \\
+       dw & like \textbf{dj}ango \\
+       gy & \textbf{j}ungle \\
+       hw & \textbf{shw}a or \textbf{sh}ip \\
+       hy & \textbf{sh}irt \\
+       kw & e\textbf{qu}iped \\
+       ky & \textbf{ch}ief \\
+       nw & like nyw \\
+       ny & Espa\textbf{ñ}ol \\
+       tw & like tshu or the word \textbf{chew} \\
+       an & short like zebr\textbf{a} and silent N if word end \\
+    \end{tabular}
+\end{center}
+}
+
+Twi belongs to the Akan language family and consists of strong dialects like Asante, Akuapem, Fante and more. The book gives just small insights of a common Twi and you will find more local varieties of pronunciation and words. Depending on the way to count there are around 60 languages in Ghana, but the Twi group is the biggest, especially in the south. The language also spread to Suriname, Jamaica and other places around South America through the slave trade. The alphabet and some of the first publications in Twi come from German missionaries and thus most vowels and consonats are not too different from German pronunciation. But it's not easy like that and you'll need to practise not only the diphthongs but also tones.
+
+
+
+\chapter{Greetings}
+
+\begin{description}
+  \item[Akwaaba!] Welcome! \\
+  \item[Mema wo akye! (Maakye!)] Good morning! \\
+    \textit{I-give you warmness}
+  \item[Mema wo aha! (Maaha!)] Good afternoon!
+  \item[Mema wo adwo! (Maadwo!)] Good evening!
+  
+  
+  \textit{\textbf{Possible answers for a greeting:}}
+  \item[Yaa Ɛna!] (mother, but used for all women)
+  \item[Yaa Agya!] (father, used for all men)
+  \item[Yaa nua!] [ nwiya ] (sibling, for same age or younger) \\
+  
+  
+  
+  \item[Wo ho te sɛn?] How are you? \\
+    \textit{You body feel how?}
+  \item[Mo ho te sɛn?] How are you \texttt{(pl.)}? \\
+    \textit{You \texttt{(pl.)} body feel how?}
+  \item[Ɛte sɛn?] How is it? \\
+    \textit{It-feel how?}
+  \item[Me ho yɛ.] I'm fine. \\
+    \textit{I body good.}
+  \item[Onyame adom me ho yɛ.] By God's grace I'm fine. \\
+    \textit{God grace I body good.}
+  \item[Ɛyɛ.] It's good.
+  \item[Bɔkɔɔ!] Soft! (infrml.)
+  \item[Na wo nso ɛ?] And how are you? \\
+    \textit{And you too \texttt{same-question}?}
+  \item[Menso me ho yɛ.] I'm also fine. \\
+    \textit{I-too I body good.}
+  \item[Yoo. Yɛda Onyame ase.] Well, we thank God. \\
+    \textit{OK. We-lay God under.}
+  
+  
+  \item[Meda ase. (Medaase.)] Thank you. \\
+    \textit{I-lay under.}
+  \item[Meda wo ase. (Meda w'ase.)] Thank you. \\
+    \textit{I-lay you under.}
+  \item[Menso meda mo ase.] Thank you\texttt{(pl.)} too. \\
+    \textit{I-too I-lay you\texttt{(pl.)} under.}
+  \item[Nante yie!] Save journey!
+  \item[Mεhu wo akyire! (Akyire!)] See you later!
+  \item[Yɛbɛhyia!] We will meet!
+  \item[Ɔkyena yɛbɛhyia bio.] Tomorrow we'll meet again.
+  \item[Afe hyia pa! - Afe nko mmeto yen!] Happy New Year! - May another year come and meet us!
+
+\end{description}
+
+\chapter{Introducing yourself}
+
+\begin{description}
+  \item[Wo din de sɛn?] What is your name?
+  \item[Yɛfrɛ wo sɛn?] How are you called? \\
+    \textit{We-call you how?}
+  \item[Me din de Ama.] My name is Ama.
+  \item[Yɛfrɛ me Adwoa.] I'm called Adwoa. \\
+    \textit{We-call I Adwoa.}
+  \item[Wofri he?] Where do you come from? \\
+    \textit{You-from where?}
+  \item[Mefri Korea.] I'm from Korea.
+  \item[Wote he?] Where do you stay? \\
+    \textit{You-stay where?}
+  \item[Mete Combine.] I stay at Combine.
+  \item[Mebaa Ghana nnaawɔtwe baako nie.] I came to Ghana last week. \\
+    \textit{I-came Ghana week one ago.}
+  \item[Wobɛdi abosome sɛn wɔ Ghana?] How many months will you stay in Ghana? \\
+    \textit{You-will-eat months how-many in Ghana?}
+  \item[Mɛdi nnaawɔtwe mienu.] I will stay two weeks. \\
+    \textit{I-will-eat week two.}
+  \item[Woadi mfiɛ sɛn?] How old are you? \\
+    \textit{You-have-eaten years how-many?}
+  \item[Medii mfiɛ dunkron.] I am 19 years old. \\
+    \textit{I-ate years ten-nine.}
+  \item[Wopɛ deɛn?] What do you want? \\
+    \textit{You-want what?}
+  \item[Mepɛ sɛ mesra Akosua.] I want to visit Akosua. \\
+    \textit{I-want that I-visit Akosua.}
+  \item[Wɔwoo wo da bɛn?] Which day are you born? \\
+    \textit{They-bear you day which?}
+  \item[Wɔwoo me Yawoada, enti yɛfrɛ me Yaw.] I'm born at Thursday and so am called Yaw. \\
+    \textit{They-born I Thursday, hence we-call I Yaw.}
+\end{description}
+
+\chapter{Pronouns, Titles and Family}
+
+\begin{description}
+  \item[me/mi] I, me, my, mine
+  \item[m'adamfo] my friend
+  \item[wo] you, your
+  \item[w'adamfo] your friend
+  \item[ɔnɔ, ɔ- \texttt{(when combined with verb)}] he/she, him/her
+  \item[ɛno, ɛ- \texttt{(when combined with verb)}] it
+  \item[ne] his/her
+  \item[n'adamfo] his/her friend
+  \item[yɛ/yɛn] we, us, our
+  \item[y'adamfo] our friend
+  \item[mo] you, yours
+  \item[mo adamfo] your friend
+  \item[wɔ/wɔɔnom/wɔn/wɔm] they, their, them
+\end{description}
+
+
+{\footnotesize 
+Often to speak to a person the title/role is prepended.
+\begin{description}
+  \item[family] abusua
+  \item[Maame/Ɛna, Ɛnanom \texttt{(pl.)}] Miss, Ladies/Women \\
+    \textit{Mother, Mothers}
+  \item[Papa/Agya, Agyanom \texttt{(pl.)}] Mister, Gentlemen/Men \\
+    \textit{Father, Fathers}
+  \item[Ɔbaa] woman, girl
+  \item[Abrantɛɛ, Ababawa] young boy, young girl
+  \item[Akwadaa/Akɔlaa] child/baby
+  \item[Ante] auntie
+  \item[wɔfa'se] mothers brother i.e. uncle \\
+    → special role in extended family
+  \item[Sewaa] aunt, "female father" i.e. fathers sister \\
+    → special role in extended family
+  \item[Bra, nnua bɛɛma] brother
+  \item[Sister (Sis'a), nnua baa] sister
+  \item[nua baa/barima panin] big sister/brother \\
+    \textit{sibling female/male senior}
+  \item[nua baa/barima kumaa/ketewa] small sister/brother \\
+    \textit{sibling female/male junior}
+  \item[(O)panyin] adult
+  \item[ntaa/ntaafoɔ \texttt{(pl.)}] twins
+  \item[anuanom] younger people
+  \item[osugyani] bachelor
+  \item[mpena] fiancee, boyfriend
+\end{description}
+}
+
+\chapter{Tenses and Grammar}
+
+\textbf{Present tense} is composed by putting subject and predicate together. While here the stem form of the verb is used many words in Twi are changed when used in different tense and nouns too change when used in plural form.
+
+\begin{description}
+  \item[Ɛnnɛ medi Fufuo.] Today I eat Fufu.
+  \item[Mete ha.] I stay here.  \textit{Note: te has several meanings.}
+  \item[Menom nsuo.] I drink water.
+  \item[Abena (ɔ)te Twi.] Abena speaks Twi. \\
+    \textit{Abena-feel Twi.}
+\end{description}
+
+
+~
+
+
+\textbf{Present progressive} is composed by adding a -re- between subject and predicate. When speaking this just becomes a vowel lengthening. Third person singular is an exception if it followes a name.
+
+\begin{description}
+  \item[Mereba. (Meeba.)] I'm coming/on my way. \\
+    \textit{I-now-come.}
+  \item[Meredi Fufuo. (Meedi Fufuo.)] I'm eating Fufu. \\
+    \textit{I-now-eat Fufu.}
+  \item[Felix ɛɛsua Twi.] \textit{\footnotesize{(Not: Felix ɔɔsua.)}} Felix is learning Twi. \\
+    \textit{Felix he-now-learn Twi.}
+  \item[Seesei worekɔ he? (Wookɔ he?)] Where are you going now? \\
+    \textit{Now you-now-go where?}
+  \item[Merekɔ fie. (Meekɔ fie.)] I am going home. \\
+    \textit{I-now-go house.}
+  \item[Merenom nsuo. (Meenom nsuo.)] I am drinking water. \\
+    \textit{I-now-drink water.}
+  \item[Yɛrekɔ nom koko. (Yɛɛkɔ nom koko.)] We go to eat mais porrage. \\
+    \textit{We-now-go drink porrage.}
+  \item[Ɔreyɛ deɛn? (Ɔɔyɛ deɛn?)] What is he doing? \\
+    \textit{He-now-do what?}
+\end{description}
+
+
+~
+
+
+\textbf{Future tense} is composed by adding a -bɛ- between subject and predicate. When speaking this can also just change \underline{e} to \underline{ɛ}.
+
+
+\begin{description}
+  \item[Mebɛda. (Mɛda.)] I will sleep.
+  \item[Ɔkyena ɔbɛtɔ mpaboa.] Tomorrow he'll buy shoes.
+  \item[Wobɛdi deɛn?] You'll eat what?
+  \item[Ɔkyena akyi Kwame bɛkɔ Togo.] The day after tomorrow Kwame will go to Togo.
+\end{description}
+
+
+
+~
+
+
+\textbf{Past tense} is formed by prolonging the vowel of the predicate (or just telling the time while using present tense).
+
+\begin{description}
+  \item[Mesuaa Fanti.] I have learned Fanti.
+  \item[Ɛnnora anwummerɛ medii Ampɛsi.] Yesterday evening I ate Ampɛsi.
+  \item[Mete Germany mfie miɛnsa nie.] I lived in Germany three years ago. \\
+    \textit{I-stay Germany year three ago.}
+\end{description}
+
+
+~
+
+
+\textbf{Imperative} forms of verbs do sometimes change (like \textbf{ka} to \textbf{kassa}). An example is \underline{ba} which becomes \underline{bra}, while others like \underline{kɔ} remain unchanged.
+
+\begin{description}
+  \item[Mepa wo kyɛw, bra, wei.] Please come, ok?
+    \textit{I-Beg you mercy, come, ok?}
+  \item[Kɔ fa ntoosi ma me.] Go bring the tomato for me.
+  \item[Gye sika.] Take the money/change.
+  \item[Menka Twi paa. Enti kassa brofo ma me.] I don't speak Twi well. So speak English for me.
+\end{description}
+
+
+~
+
+
+~
+
+
+~
+
+
+~
+
+
+~
+
+
+\textbf{Negotiation} of verbs are made by prepending \underline{n} to them in most cases. But the consonant is changed if it starts with \underline{d} like \textit{da} which becomes \textit{nna} or \textbf{b} like \textit{bɔ} which becomes \textit{mmɔ}.
+
+\begin{description}
+  \item[Wontɔ nsuo bio?] You don't buy water again? \\
+    \textit{You-not-buy water again?}
+  \item[Mentɔn no.] I don't sell this. \\
+    \textit{I-not-sell this?}
+  \item[Yenhyia seesei.] We don't meet now.
+  \item[Memmrɛ…] I am not tired… \textit{(from: abrɛ)}
+  \item[Monnom bia?] You don't drink beer?
+  \item[Adɛn Kwaku nni gyeene?] Why does Kwaku not eat onion? \\
+    \textit{Why Kwaku not-eat onion?}
+  \item[Yɛnfrɛ me Ɔburoni, me din de Lisa.] We don't call me Ɔburoni/european, my name is Lisa. \\
+    \textit{We-not-call I Ɔburoni, I name given(?) Lisa.}
+  \item[Woboa! - Daabi, memmoa.] You lie! - No, I don't lie.
+  \item[Menni sika.] I don't have money. \textit{(from: wɔ)}
+  \item[Menyɛ Amɛrikani.] I'm not an American.
+\end{description}
+
+\chapter{Useful Words and Phrases}
+
+A common one you are going to here all the time is: \textbf{Worekɔ he?} (Sounds more like "Wo-coy?") Where are you going? In Ghana people don’t give too much detail: \textbf{Me kɔ krum.} I’m going to town. A Ghanaian will then say \textbf{Kɔ bra.} Go come. (The equivalent of "come back safely".)
+
+\begin{description}
+  \item[ne] and
+  \item[na] and/but, joints phrases or introduces a question
+  \item[Da yie!] Sleep well!
+  \item[Mepɛ sɛ mekɔ gu nsuo.] I want to go to toilet (peeing). \\
+    \textit{I-like that I-go  pour-out water.}
+  \item[adepa nkye] (said as "good bye" in the evening)
+  \item[Wote Twi, anaa?] You speak/understand Twi, right?
+  \item[Aane, meka Twi.] Yes, I speak Twi.
+  \item[Kakra kakra] Small small (a little)
+  \item[Dabi, mente Twi.] No, I don't speak/understand Twi.
+  \item[Wo nso wote Twi anaa?] And you too, you speak Twi, right?
+  \item[Mepa wo kyɛw kassa breau!] Please speak slowly.
+  \item[Wose sɛn?] What do you say?
+  \item[Agoo!?] (When entering a place) Hello, is there someone? Or knocking: \textbf{Kɔkɔɔkɔ}
+    \textit{Answer:} \textbf{Amee!} Yes, someone is inside.
+  \item[Hwan a?] Who's outside?
+  \item[Ɛyɛ me, Kofi.] It's me, Kofi.
+  \item[Yoo, bra mu!] Ok, come in.
+  \item[Agoo!] (When approaching from the back) Attention, I'm coming!
+  \item[Hwe yie!] Watch out!
+  \item[Ɔɔyɛ deɛn?] What is he/she doing?
+  \item[Ɛyɛ me ya.] It hurts me.
+  \item[Kafra!] Sorry!
+  \item[Yεn kɔ?] Shall we go?/Let's go.
+  \item[Mesi wo ha.] (In a Taxi/Trotro) I drop/alight here.
+  \item[Mete ha.] I stay here.
+  \item[Mɛware wo.] I'll marry you.
+  \item[Yoo, kɔ hu me papa wɔ Germany.] Well then, go see my father in Germany.
+  \item[M'aware dada.] I've married already.
+  \item[Me wɔ kunu/yere/mpena.] I have a husband/wife/boyfriend.
+  \item[Yɛfrɛ wo maame sɛn?] We call your mother how?
+  \item[Yɛfrɛ me mamme Yaa.] We call my mother Yaa.
+  \item[Asomdwe nka wo. - Enka wo nso] Peace be with you. - And with you.
+  \item[Mepɛ w'asɛm.] I like you. \\
+    \textit{I-like you'character.}
+  \item[Sister Akua kɔ sraa n'adamfo.] Sister Akua goes to visit her friend.
+  \item[Mɛda dua ase.] I'll sleep under the tree. \\
+    \textit{I'll-sleep tree under.}
+  \item[Medaa dan mu.] I am sleeping in the room. \\
+    \textit{I-now-sleep room in.}
+  \item[Ɛnnora/Ɛnnɛ/Ɔkyena yɛ da bɛn?] What day was/is yesterday/today/tomorrow? \\
+    \textit{Yesterday/today/tomorrow is day which?}
+  \item[Ɛyɛ dɛ.] It's sweet (food).
+  \item[Wo ho yɛ fɛ.] You look beautiful. \\
+    \textit{You body is beautiful.}
+  \item[Tiafi wɔ ha?] Is there a bathroom? \\
+    \textit{Bathroom have here?}
+\end{description}
+
+
+\chapter{On the market}
+
+Always start with a smalltalk (see other chapters) before negotiating. You might like to be cheeky and either ask for a lower price or to get some additional amount.
+
+\begin{description}
+  \item[Mekɔ Kro-mu. (Mekɔ krom.)] I go to town. \\
+    \textit{I-go town-into.}
+  \item[Dwaaso ahe?] Where is the market?
+  \item[Ɛyɛ fɛfɛ.] It's beautiful.
+  \item[Me pε wei.] I like this.
+  \item[Mepɛ bio.] I want more/again.
+  \item[Wei yε sεn?/Wei sεn?] How much is this?
+  \item[Sεn?/Ɛyε sεn?] How much (is it)?
+  \item[Apple sεn?/Apple εyε sεn?] How much is the apple?
+  \item[Mepɛ sɛ, metɔ ntoma. Ntoma boɔ sɛn?] I want to buy cloth. Cloth price is how much?
+  \item[Yard baako 8 sidi (GHC).] One yard is 5 Cedi (GHC).
+  \item[Mepaakyɛ wo te so kakra.] Please, reduce a little. \\
+    \textit{I-beg-your-mercy you put-down a-bit.}
+  \item[Yoo. Ma me 7 GHC.] Ok, give me 7 Cedi.
+  \item[Me ma wo 6 GHC.] I give you 6 Cedi.
+  \item[Mepɛ sɛ metɔ gyeene. Gyeene/ɛyɛ sɛn sɛn?] I want to buy onion. Onion/It is how much for how many?
+  \item[Mmiɛnsa 60 GHp/pesewa.] Three are 60 Pesewa.
+  \item[(Wo) Ma me edu. Na gye sika.] (You) Give me ten. And take (your) money.
+  \item[Or: Mepaa kyɛ wo to me so./Mepa wo kyεw, to so kakra.] Please add some more for me (as gift).
+\end{description}
+
+
+\chapter{Weekdays and how to find your way}
+
+
+People get names according to the weekday they are born. This list contains versions in one popular spelling.
+
+\begin{center}
+    \begin{tabular}{cccc}
+       day & day in Twi & male & female \\
+       \\
+       Sunday & Kwasiada & Kwasi & Akosua \\
+       Monday & Ɛ-dwoada & Kwadwo & Adwoa \\
+       Tuesday & Ɛ-benada & Kwabena & Abenaa \\
+       Wednesday & Wukuada & Kwaku & Akua \\
+       Thursday & Yawoada & Yaw & Yaa \\
+       Friday & (E)fiada & Kofi & Afia \\
+       Saturday & Memeneda & Kwame & Ama \\
+    \end{tabular}
+\end{center}
+
+
+~
+
+
+
+\textbf{The following questions or phrases come in handy when you miss directions and get lost.}
+
+\begin{description}
+  \item[Ɛyε me sε m’ayera.]  I think I am lost.
+  \item[Ɛhefa na ɔkwan wei kɔ?] Where does this road go to?
+  \item[Wowɔ kuro no asaase mfonini?] Do you have a map of the city?
+  \item[~] \textbf{Meserε wo wobetumi akyerε me wɔ m’asaase mfonini yi so?} Can you please show me on my map?
+  \item[Ɛwa anaa?] Is it far from here?
+  \item[Ɛhefa na mεhunu adrεse yi?] Where can I find this address?
+  \item[Mεtumi anante akɔ hɔ?] Can I get there on foot?
+\end{description}
+
+~
+
+
+\textbf{Three basic Responses you might get}
+
+You also have to know some basic responses you will get when you ask these questions.
+
+\begin{description}
+  \item[Ɛwɔ w’anim tee.]  It is straight ahead.
+  \item[Fa wo nifa so.] Turn right.
+  \item[Fa wo benkum so.] Turn left.
+\end{description}
+
+\chapter{Dictionary}
+
+{\large \textbf{Verbs}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[adeka] read
+  \item[ba] come (imp. bra)
+  \item[bisa] ask
+  \item[boa] help
+  \item[dane] turn
+  \item[didi/di (+ object)] eat
+  \item[fa] take (along)
+  \item[fe ano] kiss (lit. throw out lips)
+  \item[frɛ] call
+  \item[gye] take
+  \item[hata] dry
+  \item[hia] need/want
+  \item[home] breathe
+  \item[hu] blow, see
+  \item[huri] jump
+  \item[hwɛ] look
+  \item[hye] burn
+  \item[kae] remember
+  \item[ka] talk (imp. kassa)
+  \item[kɔ] go
+  \item[kɔ/tu mmrika] run
+  \item[kye] fry
+  \item[kyerɛ] teach
+  \item[kyia] greet
+  \item[nante] walk
+  \item[noa] cook
+  \item[nom] drink
+  \item[nunu] tickle
+  \item[nya] earn
+  \item[pam] sew
+  \item[pira] hurt
+  \item[pra] sweep
+  \item[shout] tiɛmu
+  \item[somu] hold
+  \item[spoil] sɛe
+  \item[sre] laugh
+  \item[su] cry
+  \item[suro] fear
+  \item[susu] measure
+  \item[te n'ase] sit down
+  \item[tɔ] buy
+  \item[tɔn] sell
+  \item[to] throw
+  \item[tu] fly
+  \item[wia] steal
+  \item[yɛ ntɛm] hurry
+  \item[yera] loose
+\end{description}
+\end{multicols}
+
+{\large \textbf{Numbers}}
+
+For non-whole number, simply add single number’s name to its base
+value.
+\begin{multicols}{2}
+\begin{description}
+  \item[baako] one
+  \item[mienu] two
+  \item[miɛnsa] three
+  \item[ɛ-nan] four (stem: nan, speak like nain)
+  \item[e-num] five ("-" marks following stem)
+  \item[e-nsia] six
+  \item[ɛ-nson] seven
+  \item[(ɛ)nwɔtwe] eight
+  \item[(ɛ)nkron] nine
+  \item[e-du] ten
+  \item[du-baako] 11
+  \item[du-num] 15
+  \item[du-nsia] 16
+  \item[du-nkron] 19
+  \item[aduonu, aduenu] 20
+  \item[aduasa] 30
+  \item[aduasa nson] 37
+  \item[aduanan] 40
+  \item[aduonum] 50
+  \item[aduosia, aduesia] 60
+  \item[aduoɔson] 70
+  \item[aduowɔtwe] 80
+  \item[aduoɔkron] 90
+  \item[ɔha] 100
+\end{description}
+\end{multicols}
+
+{\large \textbf{Human Body}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[Eti/Etire/Ti] head
+  \item[Ti nwi] hair
+  \item[Ɛnim] face
+  \item[Mo mma] forehead
+  \item[Ɛni] eyes
+  \item[Ɛse] teeth
+  \item[Hwene] nose
+  \item[Aso] ear(s)
+  \item[Ano] mouth
+  \item[(Ɛ)kɔn] neck
+  \item[Nsa] arm(s)
+  \item[Ɛfu] stomach
+  \item[Ɛkyi] back
+  \item[Sisi] waist
+  \item[(Ɛ)nan] legs
+  \item[Ani akyi nwi] eyebrow(s)
+  \item[Afono] cheeks
+  \item[Abogwe] chin
+  \item[Abogwe sɛ] beard
+  \item[Abɛti/Mmbɛti]Shoulder(s)
+  \item[Bo] chest
+  \item[Srɛ] thigh
+  \item[Kotodwe] knee
+\end{description}
+\end{multicols}
+
+
+~
+
+~
+
+
+
+{\large \textbf{Animals}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[Adanku] rabbit
+  \item[Afofantɔ] butterfly
+  \item[Akokɔ] chicken
+  \item[Akroma] squirrel
+  \item[Ampan] bat
+  \item[Aponkye] sheep
+  \item[Apɔtrɔ] frog
+  \item[Dabo-Dabo/Dɔkɔ-Dɔkɔ] goat
+  \item[Kro-kro] hawk
+  \item[Mo mma] duck
+  \item[Nantwie] turkey
+  \item[Odwan] cow
+  \item[Ɔkra/Agyinamoa] cat
+  \item[Ɔkraman] dog
+  \item[Opuro] fox
+  \item[Ɔwɔ] snake
+  \item[Pete] vulture
+  \item[Sasakraman] wolf
+\end{description}
+\end{multicols}
+
+{\large \textbf{Fruits and Vegetables}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[Abrɔbɛ] pineapple
+  \item[Amako/Mako] pepper
+  \item[Amango] mango
+  \item[Ankaa, Akutu/Akutuo] orange
+  \item[Bankye] cassava
+  \item[Bayerɛ, beye] yam
+  \item[Bɔfre, Bɔɔfre] pawpaw, papaya
+  \item[Bɔɔdeɛ] plantain
+  \item[Gyeyney] onion
+  \item[Kwadu] banana
+  \item[Mankani] cocoyam
+  \item[Nkatiɛ] (pea)nuts
+  \item[Nkruma] Okro
+  \item[Ntoes, ntoosi] tomato
+  \item[Ntrowa/Ntɔrewa/Nyaadowa] egg plant, garden egg, aubergine
+  \item[Paya] avocado
+  \item[Ɔkra/Agyinamoa] cat
+\end{description}
+\end{multicols}
+
+{\large \textbf{Colours}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[kɔkɔɔ] red
+  \item[tumtum] black
+  \item[fitaa, fufuo] white
+  \item[sika kɔkɔɔ] gold (lit. gold red)
+  \item[bribri, bibri] blue
+  \item[bruu] blue
+  \item[ahaban mono] green (lit. new leaf)
+  \item[akokɔ sradeɛ] yellow (lit. chicken oil)
+  \item[ahaban dada] brown (lit. old leaf)
+  \item[akokɔbin] brown (lit. chicken shit)
+  \item[tuum] dark
+\end{description}
+\end{multicols}
+
+{\large \textbf{Wordlist}}
+
+\begin{multicols}{2}
+\begin{description}
+  \item[abanoma] adopted child
+  \item[abofra] child
+  \item[abosome] months, bosome = month
+  \item[afie] year, mfie = years
+  \item[anɔpa] morning
+  \item[anwummerɛ] evening
+  \item[asanka] stone bowl for grinding
+  \item[awia] noon, sun
+  \item[bɛn] which
+  \item[bosome] month, abosome = months
+  \item[dabi da] never
+  \item[da] day (noun), sleep (verb)
+  \item[da n'ase] thank him (lay him'under)
+  \item[deɛn] what
+  \item[ɛmo] rice
+  \item[Ɛnnora akye] day before yesterday
+  \item[ɛnnora] yesterday
+  \item[he] where
+  \item[hyira] bless
+  \item[ma so] lift up
+  \item[mfie] years, afie = year
+  \item[na] and/but/however, day (da)
+  \item[nana] grandmother/father, king
+  \item[nanankansoa] great-grandchild
+  \item[nnaawɔtwe] week ("days-eight")
+  \item[nya] get, receive
+  \item[ɔbabarima] son
+  \item[ɔbanana] grandchild
+  \item[okunu] husband
+  \item[Ɔkyena akyi akyi] two days after tomorrow (next-next)
+  \item[Ɔkyena akyi] day after tomorrow
+  \item[ɔkyena] tomorrow
+  \item[onua] cousin
+  \item[Onyame] God
+  \item[ɔyere] wife
+  \item[Saa!] Is that so?!
+  \item[sɛn] how
+  \item[tapoli] mortar (kitchen tool for grinding)
+  \item[tikya] teacher
+  \item[wɔfaase] nephew, niece
+  \item[yi ayɛ] give praise
+
+\end{description}
+\end{multicols}
+
+\newpage{}
+\thispagestyle {empty}
+
+\vspace*{2cm}
+
+\begin{center}
+	\parbox{10cm}{
+		\begin{raggedright}
+		{ 
+		  \Large{\textbf{Proverbs}} \\
+		  
+		  ~
+		  
+		  \normalsize
+			\begin{description}
+        \item[Nka-kra, nka-kra akokɔ bɛnom nsuo] ~ \\
+          bit by bit the chicken will drink water \\
+          ~
+        \item[Ɔkɔtɔ nwo anoma] a crab does not bear a bird
+      \end{description}
+		}
+		\end{raggedright}
+	}
+
+\end{center}
+
+\vspace*{5cm}
+
+\begin{center}
+
+\scriptsize Kai Lüke, Richard Akyea
+
+\tiny Released under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+\end{center}
+
+%=========================================
+\begin{comment}
+Just some notes, not visible in pdf.
+\end{comment}
+% Letter test: Ɛna, bɛnom, Ɔkɔtɔ
+% \blinddocument
+
+\newpage{}
+\thispagestyle {empty}
+
+~
+
+\end{document}

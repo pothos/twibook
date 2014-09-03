@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Pronunciation Help}{1}
+\contentsline {chapter}{\numberline {2}Greetings}{3}
+\contentsline {chapter}{\numberline {3}Introducing yourself}{5}
+\contentsline {chapter}{\numberline {4}Pronouns, Titles and Family}{7}
+\contentsline {chapter}{\numberline {5}Tenses and Grammar}{9}
+\contentsline {chapter}{\numberline {6}Useful Words and Phrases}{13}
+\contentsline {chapter}{\numberline {7}On the market}{17}
+\contentsline {chapter}{\numberline {8}Weekdays and how to find your way}{19}
+\contentsline {chapter}{\numberline {9}Dictionary}{21}
