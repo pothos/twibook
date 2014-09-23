@@ -1,16 +1,16 @@
-all: SmallTwiBook.pdf SmallTwiBook-aligned.pdf SmallTwiBook-coverbatch.pdf SmallTwiBook-innenbatch.pdf
+all: SmallTwiBook-unaligned.pdf SmallTwiBook.pdf SmallTwiBook-coverbatch.pdf SmallTwiBook-innenbatch.pdf
 
-test: SmallTwiBook.pdf
-	~/programme/evinceterminal.sh SmallTwiBook.pdf
+test: SmallTwiBook-unaligned.pdf
+	~/programme/evinceterminal.sh SmallTwiBook-unaligned.pdf
 clean:
 	rm *.aux
 	rm *.log
 
-SmallTwiBook.pdf: smalltwibook.tex smalltwibook.toc
+SmallTwiBook-unaligned.pdf: smalltwibook.tex smalltwibook.toc
 	xelatex smalltwibook.tex
-	mv smalltwibook.pdf SmallTwiBook.pdf
+	mv smalltwibook.pdf SmallTwiBook-unaligned.pdf
 
-SmallTwiBook-aligned.pdf SmallTwiBook-coverbatch.pdf SmallTwiBook-innenbatch.pdf: SmallTwiBook.pdf
+SmallTwiBook.pdf SmallTwiBook-coverbatch.pdf SmallTwiBook-innenbatch.pdf: SmallTwiBook-unaligned.pdf
 	./postprocess.ipy
 
 edit:
