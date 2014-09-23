@@ -1,6 +1,6 @@
 #!/usr/bin/ipython3
 
-n = ! pdfinfo SmallTwiBook.pdf |grep Pages
+n = ! pdfinfo SmallTwiBook-unaligned.pdf |grep Pages
 nrpages = int(n[0].split(' ')[-1])
 
 i = list(range(1, nrpages + 1))
@@ -28,11 +28,11 @@ print("innen", innen)
 
 listpages = "1,3,2," + ",".join(map(str,range(5,nrpages+1))) + ",4"
 # tausche bibelzitat mit contents, bewege leere seite an ende
-! pdfjoin -o SmallTwiBook-aligned.pdf SmallTwiBook.pdf $listpages
+! pdfjoin -o SmallTwiBook.pdf SmallTwiBook-unaligned.pdf $listpages
 
-! pdfjam --paper a4paper --nup '2x1' --landscape --outfile covertmp.pdf SmallTwiBook-aligned.pdf $cover
+! pdfjam --paper a4paper --nup '2x1' --landscape --outfile covertmp.pdf SmallTwiBook.pdf $cover
 ! pdf90 --outfile SmallTwiBook-coverbatch.pdf covertmp.pdf
 ! rm covertmp.pdf
-! pdfjam --paper a4paper --nup '2x1' --landscape --outfile innentmp.pdf SmallTwiBook-aligned.pdf $innen
+! pdfjam --paper a4paper --nup '2x1' --landscape --outfile innentmp.pdf SmallTwiBook.pdf $innen
 ! pdf90 --outfile SmallTwiBook-innenbatch.pdf innentmp.pdf
 ! rm innentmp.pdf
